@@ -44,7 +44,7 @@
 						Example
 					</h5>
 				</header>
-				<div class="span5" id='playlists'>
+				<div class="span5" id='contact-information'>
 					<div id='myButtons' style='width:750px;'> </div>
 					<div id='myItems' style='width:750px;'> </div>
 					<br/>
@@ -63,31 +63,37 @@
 		var ctx1 = document.getElementById('myButtons');
 		var ctx2 = document.getElementById('myItems');
 		$(document).ready(function() {
-			dataJs.draw(ctx1, ctx2, {
+			datasJs.draw(ctx1, ctx2, {
 				id: '1234',
 				caption: 'Add Contact Information',
 				trash_button_enabled: true, // default: true
-				copy_button_enableed: true, // default: true
+				copy_button_enabled: true, // default: true
 				strikethrough_enabled: true, // default: false
 				buttons: [{
 					code: '1',
 					name: 'email',
 					icon: 'envelope',
-					link: 'mailto' // default: null
+					//link: 'mailto', // default: null
+					title: 'Add an Email Address',
+					placeholder: 'Write an email address here...'
 				}, { 
 					code: '2',
 					name: 'phone',
 					icon: 'phone',
-					link: 'tel'
+					link: 'tel',
+					title: 'Add a Phone Number',
+					placeholder: 'Write a phone number here...'
 				}],
 				items: [{
-					type: '1',
+					id: 'a',
+					button_code: '1',
 					value: 'leandro@connectionsphere.com',
-					checked: true
+					strikethrough: true
 				}, { 
-					id: '2',
-					name: '555 555-5555',
-					checked: false
+					id: 'b',
+					button_code: '2',
+					value: '555 555-5555',
+					strikethrough: false
 				}],
 				on_add_item: function(type, value) {
 					// call ajax before the a new data item is added to the list.
@@ -101,7 +107,6 @@
 				on_remove_strikethrough: function(id) {
 					// call ajax before remove strikethrough from a data.
 				},
-	
 			});
 		});
 	</script>
