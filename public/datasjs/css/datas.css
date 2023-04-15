@@ -48,11 +48,15 @@ div.datasjs-buttons {
 
 /*
  items
-
 tr.data-item td.data-value {
   overflow: 'hidden';
   text-overflow: 'ellipsis';
   word-wrap: 'none';
   white-space: 'nowrap';
+}
+
+tr.data-item td.strikethrough a {
+  color: green;
+  text-decoration: 'line-through';
 }
 */
