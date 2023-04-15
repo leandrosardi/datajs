@@ -60,10 +60,10 @@
 	</body>
 
 	<script>
-		var ctx1 = document.getElementById('myButtons');
-		var ctx2 = document.getElementById('myItems');
+		var parent_buttons = document.getElementById('myButtons');
+		var parent_items = document.getElementById('myItems');
 		$(document).ready(function() {
-			datasJs.draw(ctx1, ctx2, {
+			datasJs.draw(parent_buttons, parent_items, {
 				id: '1234',
 				caption: 'Add Contact Information',
 				trash_enabled: true, // default: true
@@ -101,11 +101,8 @@
 				on_remove_item: function(id) {
 					// call ajax before the a data item is remobved from the list.
 				},	
-				on_add_strikethrough: function(id) {
+				on_strikethrough_item: function(id) {
 					// call ajax before set strikethrough to a data.
-				},
-				on_remove_strikethrough: function(id) {
-					// call ajax before remove strikethrough from a data.
 				},
 			});
 		});
