@@ -1,0 +1,42 @@
+div.datasjs-buttons {
+    align: left;
+  }
+  
+  div.datasjs-buttons button {
+    color: rgb(210,210,210);
+    text-decoration: none;
+    width: 9px;
+  }
+  
+  div.datasjs-buttons:hover button {
+    color: rgb(120,210,255);
+    text-decoration: none;
+    width: 9px;
+  }
+  
+  div.datasjs-buttons button i {
+    width: 9px;
+  }
+  
+  div.datasjs-buttons button:hover {
+    color: rgb(0,128,192);
+    text-decoration: none;
+  }
+  
+  div.datasjs-buttons span {
+    color: rgb(210,210,210);
+  }
+  
+  div.datasjs-buttons:hover span {
+    color: gray;
+  }
+  
+  div.add-item-div {
+    position:absolute;
+    left:0;
+    top:0;
+    background-color:white;
+    height:100%;
+    width:100%;
+  }
+  
