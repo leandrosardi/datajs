@@ -39,8 +39,13 @@ div.datasjs-buttons {
     height:100%;
     width:100%;
   }
-  
-.data-value {
-  overflow = 'hidden';
-  textOverflow = 'ellipsis';
+
+/*
+ items
+*/
+tr.data-item td.data-value {
+  overflow: 'hidden';
+  text-overflow: 'ellipsis';
+  word-wrap: 'none';
+  white-space: 'nowrap';
 }
