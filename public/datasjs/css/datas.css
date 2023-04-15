@@ -7,7 +7,13 @@ div.datasjs-buttons {
     text-decoration: none;
     width: 9px;
   }
-  
+
+  div.datasjs-buttons:hover button:disabled {
+    color: rgb(60,60,60);
+    text-decoration: none;
+    width: 9px;
+  }
+
   div.datasjs-buttons:hover button {
     color: rgb(120,210,255);
     text-decoration: none;
