@@ -42,10 +42,11 @@ div.datasjs-buttons {
 
 /*
  items
-*/
+
 tr.data-item td.data-value {
   overflow: 'hidden';
   text-overflow: 'ellipsis';
   word-wrap: 'none';
   white-space: 'nowrap';
 }
+*/
