@@ -46,17 +46,22 @@ div.datasjs-buttons {
     width:100%;
   }
 
-/*
- items
+tr.data-item {
+  vertical-align: top;
+}
+
+tr.data-item td {
+  vertical-align: top;
+}
+
 tr.data-item td.data-value {
-  overflow: 'hidden';
-  text-overflow: 'ellipsis';
-  word-wrap: 'none';
-  white-space: 'nowrap';
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: none;
+  white-space: nowrap;
 }
 
 tr.data-item td.strikethrough a {
   color: green;
-  text-decoration: 'line-through';
+  text-decoration: line-through;
 }
-*/
